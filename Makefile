@@ -8,7 +8,7 @@ OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 SDIR = ./src
 
 CC=g++ -std=c++14
-CFLAGS=-I$(IDIR) -g
+CFLAGS=-I$(IDIR) -fPIC
 
 run: build
 	./a.out
